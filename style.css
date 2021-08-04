@@ -80,8 +80,10 @@ body {
 }
 
 .spec {
+    font-size: var(--smallFontSize);
     padding: 0.125rem 0.5625rem;
     border-radius: 0.1875rem;
+    line-height: 1.0625rem;
 }
 
 .status {
@@ -113,6 +115,11 @@ body {
     margin: 0 3px;
 }
 
+.textS15LH21 { /*font size 15px line height 21px*/
+    font-size: var(--regularFontSize);
+    line-height: 1.3125rem;
+}
+
 /* Header */
 header {
     color: var(--headerColor);
@@ -138,6 +145,7 @@ h2 {
     color: var(--headingsColor);
     font-size: var(--smallerFontSize);
     font-weight: 400;
+    line-height: 1.3125rem;
     text-transform: uppercase;
 }
 ul {
@@ -155,15 +163,28 @@ input {
     height: 2.5rem;
 }
 
-abbr {
+#personality abbr {
     text-decoration: none;
     text-transform: uppercase;
     font-size: var(--smallerFontSize);
     color: var(--abbrColor);
     font-weight: 400;
 }
+#personality figcaption {
+    line-height: 1.3425rem;
+}
 
 /* Education */
+#education ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+#education li {
+    line-height: 1.3125rem;
+}
+
 #education p {
     font-size: var(--smallerFontSize);
     color: var(--lightColor);
@@ -180,7 +201,7 @@ abbr {
 }
 
 #hobbies li {
-    margin-right: 0.5ch; /* small adjustment to force wrap on iphone */
+    margin-right: 0.5ch; /* small adjustment to force wrap */
 }
 
 #hobbies li:not(:last-child)::after {
@@ -188,6 +209,11 @@ abbr {
 }
 
 /* Digital Communities */
+#digitalCommunities {
+    gap: 0.5rem;
+    padding: 0.5625rem 0.75rem; /*pixel perfect adjustments */
+}
+
 #digitalCommunities ul {
     line-height: 0;
 }
