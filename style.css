@@ -177,10 +177,12 @@ header figure {
 }
 
 header img {
+    z-index: -1;
     position: relative; /* to make zindex work */
     width: 100%;
-    margin-bottom: -100px;
-    z-index: -1;
+    height: 50vh;
+    object-fit: cover;
+    object-position: 50% 20%;
 }
 
 header figcaption {
@@ -207,7 +209,6 @@ h1 {
 
 #profile p {
     white-space: pre-line;
-    width: 17.25rem;
 }
 
 /* Main */
