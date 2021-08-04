@@ -130,6 +130,14 @@ h1 {
 }
 
 #profile {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    margin: 1.5625rem auto 1.5625rem 1.8125rem;
+    width: 17.25rem;
+}
+
+#profileSpecs {
     gap: 0.5rem;
 }
 
