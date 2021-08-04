@@ -50,3 +50,67 @@
     box-sizing: border-box;
     font-family: var(--mainFont);
 }
+
+html {
+    font-size: clamp(16px, 1.5779vmax, 24px); /* Responsive text */
+}
+
+body {
+    background: var(--bgColor);
+}
+
+h2 {
+    color: var(--headingsColor);
+    font-size: var(--smallerFontSize);
+    text-transform: uppercase;
+}
+
+input {
+    pointer-events:none
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* COMPONENTS */
+
+.spec {
+    padding: 2px 9px;
+    border-radius: 3px;
+}
+
+.card {
+    padding: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    color: var(--cardColor);
+    background: var(--cardbgColor);
+}
+
+/* Personality */
+
+/* Education */
+
+/* Work Life */
+
+/* Hobbies */
+
+/* Digital Communities */
+
+/* Digital Media */
+
+/* Goals */
+
+/* Frustrations */
+
+/* -------------------------------------------------------- */
+
+/* Media Queries */
