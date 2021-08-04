@@ -180,7 +180,7 @@ input {
     text-transform: uppercase;
     font-size: var(--smallerFontSize);
     color: var(--abbrColor);
-    font-weight: 400;
+    font-weight: 300;
 }
 #personality figcaption {
     line-height: 1.3425rem;
@@ -212,12 +212,8 @@ input {
     gap: 0;
 }
 
-#hobbies li {
-    margin-right: 0.5ch; /* small adjustment to force wrap */
-}
-
 #hobbies li:not(:last-child)::after {
-    content: '\00a0•';
+    content: '\00a0•\00a0';
 }
 
 /* Digital Communities */
