@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "SF Pro Text";
+    src: url(./fonts/SF-Pro-Text-Light.otf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: "SF Pro Text";
+    src: url(./fonts/SF-Pro-Text-Regular.otf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "SF Pro Text";
+    src: url(./fonts/SF-Pro-Text-Medium.otf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "SF Pro Text";
+    src: url(./fonts/SF-Pro-Text-Bold.otf);
+    font-weight: 700;
+}
+
+:root {
+    --bgColor : #F4F4F4;
+    --femaleColor : #D0004B;
+    --femaleBgColor : #FFEAEB;
+    --maleColor : #0065C2;
+    --cityColor : #089C67;
+    --cityBgColor : #E8FBED;
+    --workColor : #4B6A87;
+    --workBgColor : #F4F4F4;
+    --headerColor : #303030;
+    --headingsColor : #626262;
+    --abbrColor : #C4C4C4;
+    --cardColor : #4D4D4D;
+    --cardbgColor : #FFFFFF;
+    --lightColor : #818181;
+
+    
+    --mainFont : "SF Pro Text";
+    --largerFontSize : 32px; 
+    --largeFontSize: 18px;
+    --mediumFontSize : 16px;
+    --regularFontSize : 15px; 
+    --smallFontSize: 14px; 
+    --smallerFontSize : 12px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--mainFont);
+}
