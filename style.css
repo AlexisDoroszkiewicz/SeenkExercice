@@ -133,6 +133,10 @@ h1 {
     gap: 0.5rem;
 }
 
+header p {
+    white-space: pre-line;
+}
+
 /* Main */
 main {
     display: flex;
