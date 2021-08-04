@@ -53,7 +53,7 @@
 }
 
 html {
-    font-size: clamp(16px, 1.5779vmax, 22px); 
+    font-size: clamp(16px, 1.5779vmax, 21px); 
     /* Responsive text */
 }
 
@@ -326,9 +326,11 @@ input {
 
     header {
         width: clamp(100px,33.038%,480px);
+        flex-shrink: 1;
     }
 
     .card {
-        width: clamp(305px, 48%, 50%);
+        width: 48%;
+        min-width: 305px;
     }
 }
