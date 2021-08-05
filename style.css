@@ -44,7 +44,7 @@
 }
 
 html {
-    font-size: clamp(16px, 1.5779vmax, 21px); 
+    font-size: clamp(16px, 2.4615vh, 21px); 
     /* Responsive text */
 }
 
@@ -327,7 +327,7 @@ input, label {
 
     main {
         width: 62%; /* taking margins into account aiming for 629px */
-        margin: 4.7692vh 2.9586vw 4.7692vh 1.9724vw;
+        margin: 4.7692vh 2.9586vw 1rem 1.9724vw;
         max-height: 100vh;
         flex-wrap: wrap;
         gap: 0.9375rem 1.1875rem;
@@ -339,6 +339,7 @@ input, label {
     }
 
     .card {
-        width: 48.516%; /* 305px/629px main size */
+        width: 48.516%;
+        /* width: 305px; */
     }
 }
