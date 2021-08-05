@@ -321,7 +321,7 @@ input {
 
     main {
         width: 62%; /* taking margins into account aiming for 629px */
-        margin: 31px 1.875rem auto 1.25rem;
+        margin: 4.7692vh 2.9586vw 4.7692vh 1.9724vw;
         max-height: 100vh;
         flex-wrap: wrap;
         gap: 0.9375rem 1.1875rem;
@@ -329,6 +329,7 @@ input {
 
     header {
         width: 33.038%;
+        height: 100vh;
     }
 
     .card {
