@@ -232,14 +232,20 @@ ul {
     padding: 0;
 }
 
-input {
+input, label {
     pointer-events:none;
 }
 
 /* Personality */
 #personality img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3.9448vmax;
+    height: 3.9448vmax;
+}
+
+#personality figure div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 #personality abbr {
@@ -294,8 +300,8 @@ input {
 }
 
 #digitalCommunities img {
-    width: 3.25rem;
-    height: 3.25rem;
+    width: 5.1283vmax;
+    height: 5.1283vmax;
 }
 
 /* Digital Media */
