@@ -352,7 +352,7 @@ and (orientation:portrait) {
 and (orientation:landscape) {
     html {
         font-size: clamp(16px, 1.5vmax, 20px); 
-        /* Responsive text */
+        /* Responsive text for larger screen sizes */
     }
 
     body {
@@ -362,22 +362,22 @@ and (orientation:landscape) {
     header {
         width: 33.058%;
     }
+
     header img {
         padding-right: 0.5px;
     }
 
     main {
-        width: 62%;
+        width: 62%; /* not 66% because of paddings */
         flex-wrap: wrap;
         width: calc(100% - 33.058%);
-        min-height: 40rem;
-        max-height: 100vh;
+        height: 41rem;
         gap: 2.3076vh 1.1875rem;
         padding: 3.0572vmax 2.95857vmax 0 1.9723vmax;
     }
 
     .card {
-        width: 48.506%
+        width: 48.506%;
     }
 }
 
