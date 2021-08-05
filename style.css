@@ -255,7 +255,7 @@ input, label {
     color: var(--abbrColor);
     font-weight: 300;
 }
-#personality figcaption {
+#personality p {
     line-height: 1.3425rem;
 }
 
