@@ -90,6 +90,7 @@ body {
 }
 
 .specStatus {
+    z-index: 1;
     color: var(--statusColor);
     background: var(--statusBgColor);
 }
