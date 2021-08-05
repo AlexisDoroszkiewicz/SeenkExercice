@@ -333,9 +333,23 @@ input, label {
         margin-left: auto;
         padding: 1rem;
     }
+    header img {
+        padding-right: 2px;
+    }
 }
 
-@media screen and (min-width:980px) {
+@media screen and (min-width:700px)
+and (orientation:portrait) {
+    main {
+        flex-wrap: nowrap;
+    }
+    .card {
+        width: auto;
+    }
+}
+
+@media screen and (min-width:980px)
+and (orientation:landscape) {
     html {
         font-size: clamp(16px, 1.5vmax, 20px); 
         /* Responsive text */
@@ -346,22 +360,33 @@ input, label {
     }
 
     header {
-        position: relative;
         width: 33.058%;
+    }
+    header img {
+        padding-right: 0.5px;
     }
 
     main {
-        width: 100%;
+        width: 62%;
         flex-wrap: wrap;
         width: calc(100% - 33.058%);
         min-height: 40rem;
         max-height: 100vh;
         gap: 2.3076vh 1.1875rem;
-        margin: 0;
         padding: 3.0572vmax 2.95857vmax 0 1.9723vmax;
     }
 
     .card {
         width: 48.506%
+    }
+}
+
+@media screen and (min-height:1200px)
+and (orientation:landscape) {
+    main {
+        flex-wrap: nowrap;
+    }
+    .card {
+        width: auto;
     }
 }
