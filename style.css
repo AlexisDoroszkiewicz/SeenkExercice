@@ -170,7 +170,7 @@ header {
     flex-direction: column;
     gap: 0.625rem;
     background: var(--cardbgColor);
-    padding: 7.125rem 2.9586vw 1.5625rem;
+    padding: 7.125rem 2.9586vw 1.5625rem calc(2.9586vw - 1px);
     margin-top: -6.5rem;
     clip-path: polygon(0 25.12%, 100% 0%, 100% 100%, 0% 100%);
 }
@@ -210,18 +210,12 @@ h1 {
     min-width: 17rem;
 }
 
-@media screen and (max-width:290px) {
-    #profile p {
-        min-width: 15rem;
-    }
-}
-
 /* Main */
 main {
     display: flex;
     flex-direction: column;
     gap: 0.9375rem;
-    padding: 0.9375rem 0;
+    margin: 0.9375rem 0;
 }
 
 h2 {
@@ -311,24 +305,18 @@ input {
 /* -------------------------------------------------------- */
 
 /* Media Queries */
+@media screen and (max-width:290px) { /* galaxy fold adjustment */
+    #profile p {
+        min-width: 15rem;
+    }
+}
+
 @media screen and (min-width:780px) {
     body {
         display: flex;
     }
 
     main {
-        width: 66%;
-        padding-top: 1.9375rem;
-        padding-left: 1.25rem;
-        padding-right: 1.875rem;
-    }
-
-    header {
-        width: clamp(100px,33.038%,480px);
-    }
-
-    .card {
-        width: 48%;
-        min-width: 305px;
+        margin: calc(1.875rem + 1px) 1.875rem auto 1.25rem;
     }
 }
