@@ -341,9 +341,15 @@ input, label {
         display: flex;
     }
 
+    header {
+        position: relative;
+        width: 33.058%;
+    }
+
     main {
-        width: auto;
+        width: 100%;
         flex-wrap: wrap;
+        width: calc(100% - 33.058%);
         min-height: 40rem;
         max-height: 100vh;
         gap: 2.3076vh 1.1875rem;
@@ -351,13 +357,7 @@ input, label {
         padding: 3.0572vmax 2.95857vmax 0 1.9723vmax;
     }
 
-    header {
-        position: relative;
-        width: 33.038%;
-    }
-
     .card {
-        width: 48.516%;
-        /* width: 305px; */
+        width: 48.506%
     }
 }
