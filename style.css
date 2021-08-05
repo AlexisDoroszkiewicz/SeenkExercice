@@ -133,6 +133,7 @@ header {
     backdrop-filter: blur(2px);
     clip-path: polygon(0 100%, 100% 0%, 100% 100%, 0% 100%);
     transform:scaleZ(1); /* fix white line clip path bug */
+    
 }
 #photoDecoration2 {
     z-index: 3;
@@ -145,6 +146,7 @@ header {
     backdrop-filter: blur(2px);
     clip-path: polygon(0 100%, 100% 0%, 100% 100%, 0% 100%);
     transform:scaleZ(1); /* fix white line clip path bug */
+    
 }
 #photoDecoration3 {
     z-index: 4;
@@ -157,6 +159,7 @@ header {
     backdrop-filter: blur(2px);
     clip-path: polygon(0 0, 100% 110%, 100% 100%, 0 100%);
     transform:scaleZ(1); /* fix white line clip path bug */
+    
 }
 
 #profile {
@@ -185,6 +188,7 @@ header img {
     height: 56.616vh;
     object-fit: cover;
     object-position: top;
+    padding-right: 0.5px; /* fix rendering bug */
 }
 
 header figcaption {
