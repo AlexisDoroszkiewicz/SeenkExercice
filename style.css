@@ -177,6 +177,7 @@ header {
 
 
 header figure {
+    /* decoration are placed relative to */
     position: relative;
 }
 
@@ -231,6 +232,7 @@ ul {
 }
 
 input, label {
+    /* checkboxes are not meant to be turned on/off in this context */
     pointer-events:none;
 }
 
@@ -296,7 +298,8 @@ input, label {
 }
 
 #digitalCommunities ul {
-    line-height: 0;
+    /* fix li being bigger than content */
+    line-height: 0; 
 }
 
 #digitalCommunities img {
