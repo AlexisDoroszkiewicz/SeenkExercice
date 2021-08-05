@@ -43,11 +43,6 @@
     font-family: var(--mainFont);
 }
 
-html {
-    font-size: clamp(15px, 2.46154vh, 20px); 
-    /* Responsive text */
-}
-
 body {
     background: var(--bgColor);
 }
@@ -217,7 +212,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0.9375rem;
-    margin: 0.9375rem 0;
 }
 
 h2 {
@@ -240,6 +234,8 @@ input, label {
 #personality img {
     width: 3.9448vmax;
     height: 3.9448vmax;
+    min-width: 40px;
+    min-height: 40px;
 }
 
 #personality figure div {
@@ -300,8 +296,8 @@ input, label {
 }
 
 #digitalCommunities img {
-    width: 5.1283vmax;
-    height: 5.1283vmax;
+    width: clamp(52px,5.1283vmax,90px);
+    height: clamp(52px,5.1283vmax,90px);
 }
 
 /* Digital Media */
@@ -319,23 +315,41 @@ input, label {
     }
 }
 
-@media screen and (min-width:780px) {
+@media screen and (min-width:700px) {
     body {
         display: flex;
-        max-height: 100vh;
+    }
+    header {
+        position: fixed;
+        width: 40vw;
+    }
+    main {
+        width: 60%;
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width:980px) {
+    html {
+        font-size: clamp(16px, 1.5vmax, 20px); 
+        /* Responsive text */
+    }
+
+    body {
+        display: flex;
     }
 
     main {
         width: 62%; /* taking margins into account aiming for 629px */
-        margin: 4.7692vh 2.9586vw 1rem 1.9724vw;
-        max-height: 100vh;
         flex-wrap: wrap;
+        min-height: 37.5rem;
+        max-height: 95vh;
         gap: 2.3076vh 1.1875rem;
     }
 
     header {
+        position: relative;
         width: 33.038%;
-        height: 100vh;
     }
 
     .card {
