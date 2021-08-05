@@ -322,10 +322,12 @@ input, label {
     header {
         position: fixed;
         width: 40vw;
+        min-height: 100vh;
     }
     main {
         width: 60%;
         margin-left: auto;
+        padding: 1rem;
     }
 }
 
@@ -340,11 +342,13 @@ input, label {
     }
 
     main {
-        width: 62%; /* taking margins into account aiming for 629px */
+        width: auto;
         flex-wrap: wrap;
-        min-height: 37.5rem;
-        max-height: 95vh;
+        min-height: 40rem;
+        max-height: 100vh;
         gap: 2.3076vh 1.1875rem;
+        margin: 0;
+        padding: 3.0572vmax 2.95857vmax 0 1.9723vmax;
     }
 
     header {
