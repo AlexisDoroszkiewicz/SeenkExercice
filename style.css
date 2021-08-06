@@ -237,17 +237,20 @@ input, label {
 }
 
 /* Personality */
+#personality figure {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: auto auto;
+    align-items: center;
+    gap: 0 0.625rem;
+}
+
 #personality img {
+    grid-row: 1 / 3;
     width: 3.9448vmax;
     height: 3.9448vmax;
     min-width: 40px;
     min-height: 40px;
-}
-
-#personality figure div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
 }
 
 #personality abbr {
@@ -257,7 +260,7 @@ input, label {
     color: var(--abbrColor);
     font-weight: 300;
 }
-#personality p {
+#personality figcaption {
     line-height: 1.3425rem;
 }
 
@@ -303,8 +306,8 @@ input, label {
 }
 
 #digitalCommunities img {
-    width: clamp(52px,5.1283vmax,90px);
-    height: clamp(52px,5.1283vmax,90px);
+    width: clamp(52px,4vmax,90px);
+    height: clamp(52px,4vmax,90px);
 }
 
 /* Digital Media */
@@ -356,10 +359,6 @@ and (orientation:landscape) {
     html {
         font-size: clamp(16px, 1.5vmax, 20px); 
         /* Responsive text for larger screen sizes */
-    }
-
-    body {
-        display: flex;
     }
 
     header {
